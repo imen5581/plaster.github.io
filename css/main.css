@@ -31,6 +31,13 @@ section {
   font-size: 3.6rem;
   text-align: center;
 }
+.section-header-light {
+  color: #ffffff;
+  margin-top: 0;
+}
+.section-header p {
+  font-size: 1.4rem;
+}
 /*main*/
 .main {
   padding: 3rem 0 5rem;
@@ -180,6 +187,55 @@ section {
 picture img {
   width: 80px;
   height: 80px;
+}
+.price {
+  background: url(../img/1111.png) repeat center;
+}
+.price-header-btn {
+  margin-top: 2rem;
+}
+.price-block {
+  min-height: 50rem;
+  padding: 1rem 3rem 4rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+.price-block h4 {
+  margin: 3rem 0;
+  font-size: 1.9rem;
+}
+.price-block img {
+  width: 100%;
+  max-width: 30rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  height: 220px;
+  width: 300px;
+}
+.price-tag {
+  font-size: 1.9rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 2rem;
+}
+.price-list {
+  padding: 0;
+  list-style: none;
+  min-height: 14rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.price-list li:before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+  background: url(../img/checked.png) no-repeat center;
+  vertical-align: middle;
+  background-size: 100%;
 }
 @media (max-width: 990px) {
   .main {

@@ -38,9 +38,16 @@ section{
 }
 
 .section-header{
+  &-light{
+    color: @light;
+    margin-top: 0;
+  }
   margin: 2rem 0 10rem;
   font-size: 3.6rem;
   text-align: center;
+  p{
+    font-size: 1.4rem;
+  }
 }
 
 /*main*/
@@ -205,6 +212,57 @@ section{
 picture img{
   width: 80px;
   height: 80px;
+}
+
+.price{
+  background: url(../img/1111.png) repeat center;
+  &-header-btn{
+    margin-top: 2rem;
+  }
+  &-block{
+    min-height: 50rem;
+    padding: 1rem 3rem 4rem;
+    background-color: @light;
+    box-shadow: 7px 12px 21px 0px rgba(0,0,0,0.17);
+    text-align: center;
+    h4{
+      margin: 3rem 0;
+      font-size: 1.9rem;
+    }
+    img{
+      width: 100%;
+      max-width: 30rem;
+      display: inline-block;
+      margin-bottom: 3rem;
+      height: 220px;
+      width: 300px;
+    }
+  }
+  &-tag{
+    font-size: 1.9rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  &-list{
+    padding: 0;
+    list-style: none;
+    min-height: 14rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    li{
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+        background: url(../img/checked.png) no-repeat center;
+        vertical-align: middle;
+        background-size: 100%;
+      }
+    }
+  }
 }
 
 @media(max-width: 990px){
