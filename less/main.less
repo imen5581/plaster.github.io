@@ -37,6 +37,12 @@ section{
   padding: 10rem 0;
 }
 
+.section-header{
+  margin: 2rem 0 10rem;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
 /*main*/
 .main {
   padding: 3rem 0 5rem;
@@ -145,6 +151,62 @@ section{
   height: 7rem;
   line-height: 7rem;
 }
+
+.features {
+  &-block {
+    text-align: center;
+    h3{
+      font-weight: 900;
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+    }
+    p{
+      display: inline-block;
+      width: 80%;
+      font-size: 1.6rem;
+    }
+  }
+
+  &-img {
+    height: 8rem;
+    margin-bottom: 3rem;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.slick-active{
+  outline: none;
+}
+.arrow{
+  position: absolute;
+  top: 50%;
+  transform: scaleY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  opacity: 0.6;
+
+}
+.prev{
+  background: url(../img/button2.png) center no-repeat;
+  left: 0;
+  background-size: 70%;
+}
+.next{
+  background: url(../img/button.png) center no-repeat;
+  right: 0;
+  background-size: 70%;
+}
+
+picture img{
+  width: 80px;
+  height: 80px;
+}
+
 @media(max-width: 990px){
   .main{
     background-position: top right;
