@@ -371,6 +371,87 @@ picture img {
   font-size: 1.9rem;
   font-weight: 900;
 }
+.problems {
+  position: relative;
+}
+.problems-women {
+  position: absolute;
+  bottom: 0;
+  width: 30rem;
+  left: 50%;
+  margin-left: -19rem;
+}
+.problems-list {
+  border: 4px solid;
+  padding: 2rem;
+  min-height: 35rem;
+  margin-bottom: 2rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+.problems-list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+.problems-list ul li {
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 3rem;
+}
+.problems-list ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 3rem;
+  height: 4rem;
+}
+.problems-list-bad {
+  border-color: #e8e8e8;
+}
+.problems-list-bad h4 {
+  opacity: 0.5;
+}
+.problems-list-bad ul li:before {
+  background: url(../img/cancel.png) center no-repeat;
+  background-size: 70%;
+}
+.problems-list-good {
+  border-color: #358015;
+}
+.problems-list-good h4 {
+  opacity: 0.5;
+}
+.problems-list-good ul li:before {
+  background: url(../img/checked2.png) center no-repeat;
+  background-size: 70%;
+}
+.materials h2 {
+  font-weight: 900;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+.tour {
+  background: #ffffff url(../img/tour.png) center left -27rem no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+footer {
+  padding: 4rem 0;
+}
 @media (max-width: 1199px) {
   .feedback-form {
     padding: 3rem 5rem;
@@ -384,6 +465,9 @@ picture img {
   .price-block img {
     width: 230px;
     height: 200px;
+  }
+  .problems-list {
+    min-height: 40rem;
   }
 }
 @media (max-width: 991px) {
@@ -425,10 +509,19 @@ picture img {
   .hand {
     display: none;
   }
+  .problems-women {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
+  }
 }
 @media (max-width: 767px) {
   .main {
     background-position: top left;
+  }
+  .main-content h1 {
+    font-size: 3.5rem;
   }
   .header {
     text-align: center;
@@ -452,6 +545,9 @@ picture img {
   .scheme-block {
     min-height: 20rem;
   }
+  footer {
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
   .main-content h1 {
@@ -467,5 +563,8 @@ picture img {
   .feedback-text {
     width: 200px;
     height: 150px;
+  }
+  footer {
+    text-align: center;
   }
 }
